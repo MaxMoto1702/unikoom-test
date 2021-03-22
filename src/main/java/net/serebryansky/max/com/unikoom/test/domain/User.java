@@ -12,7 +12,7 @@ import static javax.persistence.GenerationType.IDENTITY;
  * Информация о пользователе
  */
 @Entity
-@Table(name = "\"user\"")
+@Table(name = "users")
 //@Immutable
 @Data
 public class User {

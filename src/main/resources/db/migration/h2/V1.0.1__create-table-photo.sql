@@ -15,9 +15,9 @@ alter table photo
 create unique index photo_id_uindex
     on photo (id);
 
-alter table "user"
+alter table users
     add photo_id bigint;
 
-alter table "user"
+alter table users
     add constraint user_photo_id_fk
         foreign key (photo_id) references photo;

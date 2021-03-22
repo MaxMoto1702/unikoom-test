@@ -1,4 +1,4 @@
-create table user
+create table users
 (
     id         bigint auto_increment,
     username   varchar(255) /*not null*/,
@@ -8,13 +8,13 @@ create table user
     sex        varchar(10) /*not null*/
 );
 
-alter table user
+alter table users
     add constraint USER_PK
         primary key (id);
 
 create unique index USER_ID_UINDEX
-    on user (id);
+    on users (id);
 
 -- create unique index USER_USERNAME_UINDEX
---     on user (username);
+--     on users (username);
 
